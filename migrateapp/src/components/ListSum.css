@@ -1,0 +1,91 @@
+.list-bullets {
+    list-style: none;
+}
+
+.list-bullets li {
+    display: flex;
+    align-items: center;
+}
+
+.green li::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(5, 118, 16);
+    border: 2px solid rgb(5, 118, 16);
+    display: block;
+    margin-right: 1rem;
+}
+
+.yellow li::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(174, 195, 14);
+    border: 2px solid rgb(174, 195, 14)f;
+    display: block;
+    margin-right: 1rem;
+}
+
+.sizeCard {
+    width: 450px;
+    position: fixed;
+    z-index: 2;
+    left: 20px;
+    top: 10px;
+}
+
+.red li::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: crimson;
+    border: 2px solid #b13f3f;
+    display: block;
+    margin-right: 1rem;
+}
+
+
+
+/* Unordered list with custom numbers style */
+ol.custom-numbers {
+    list-style: none;
+}
+
+ol.custom-numbers li {
+    counter-increment: my-awesome-counter;
+}
+/* 
+ol.custom-numbers li::before {
+    content: counter(my-awesome-counter) ". ";
+    color: #2b90d9;
+    font-weight: bold;
+} */
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+body {
+    min-height: 100vh;
+    /* background-image: linear-gradient(to right, #5784d7 0%, #a7bfe8 100%); */
+}
+
+li {
+    font-style: italic;
+}
+
+.listCls{
+    /* background-color: black; */
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 3px;
+}
